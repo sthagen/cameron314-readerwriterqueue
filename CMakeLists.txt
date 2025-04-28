@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-project(readerwriterqueue VERSION 1.0.0)
+project(readerwriterqueue VERSION 1.0.7)
 
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
@@ -23,6 +23,7 @@ write_basic_package_version_file(
     VERSION
         ${PROJECT_VERSION}
     COMPATIBILITY AnyNewerVersion
+    ARCH_INDEPENDENT
 )
 
 configure_package_config_file(${PROJECT_NAME}Config.cmake.in
